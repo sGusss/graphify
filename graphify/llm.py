@@ -62,8 +62,8 @@ BACKENDS: dict[str, dict] = {
         "max_tokens": 16384,
     },
     "ollama": {
-        "base_url": os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434/v1"),
-        "default_model": os.environ.get("OLLAMA_MODEL", "qwen2.5-coder:7b"),
+        "base_url": os.environ.get("OLLAMA_BASE_URL", "http://10.193.123.134:11434/v1"),
+        "default_model": os.environ.get("OLLAMA_MODEL", "mistral-small:latest"),
         "env_key": "OLLAMA_API_KEY",
         "pricing": {"input": 0.0, "output": 0.0},
         "temperature": 0,
